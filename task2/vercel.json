@@ -3,6 +3,18 @@
       {
         "src": "index.html",
         "use": "@vercel/static"
+      },
+      {
+        "src": "styles.css",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "index.js",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "images/*",
+        "use": "@vercel/static"
       }
     ]
   }
