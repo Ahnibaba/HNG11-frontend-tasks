@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/bfa60e7860.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="small-size">
+        <div class="container">
+          <nav>
+            <h1 class="nav-h1">Ahnibaba</h1>
+            <ul id="sidemenu">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#goals">Goals</a></li>
+              <!-- <li><a href="#services">Services</a></li> -->
+              <li><a href="http://hng.tech/learn"data-testid="hngLink">HNG Learn</a></li>
+              <li><a href="http://keyword.dog/" data-testid="keywordLink">Keyword Link</a></li>
+              <li><a href="http://scrapeanyweb.site/" data-testid="scrapeanywebLink">Scrapeany</a></li>
+              <!-- <li><a href="#contact">Contact</a></li> -->
+              <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          </nav>
+          <div class="header-text">
+            <p>Frontend Developer</p>
+            <h1>Hi, I'm Aniebiet</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------- about ------------------------ -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img
+              src="images/por2.jpg"
+              alt=""
+              width="1080"
+              height="1080"
+              data-testid="slackProfilePicture"
+            />
+            <!-- the specified width and height is the original size of the image, this is done to maintain natural dimensions -->
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              As a front-end developer, you specialize in merging creativity
+              with technical proficiency to build captivating user interfaces.
+              Your proficiency in HTML, CSS, and JavaScript enables you to
+              transform design concepts into dynamic web experiences that
+              resonate with users. You prioritize accessibility and responsive
+              design, ensuring your creations are inclusive and functional
+              across various devices and platforms. Collaborating closely with
+              design teams and backend developers, you leverage your expertise
+              to deliver polished frontend solutions that enhance user
+              engagement and satisfaction.
+            </p>
+            <div class="slack-details">
+                <p data-testid="slackDisplayName">Slack Name: Ahnibaba</p>
+                <p data-testid="slackEmail">Slack Email: edet.aniebiet@lmu.edu.ng</p>
+                <p id="utc-time" data-testid="currentTimeUTC"> </p>
+                <p id="currentDayOfWeek" data-testid="currentDay"></p>
+            </div>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Frontend</span><br />Implementing Web design/UI</li>
+                <li>
+                  <span>Backend</span><br />Creating and Implementing
+                  Application Logic for a dynamic web app
+                </li>
+                <li>
+                  <span>Problem-solving</span><br />Solving problems by paying
+                  attention to details and interaction
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2023-2024</span><br />Complete Web development at Udemy
+                </li>
+                <li>
+                  <span>2024-Current</span><br />HNG11 internship programme
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2022-Current</span><br />Landmark University</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------------- services--------------- -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Web design encompasses both the aesthetic and functional aspects
+              of creating websites. It involves the planning, conceptualizing,
+              and arranging of content online
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-regular fa-window-maximize"></i>
+            <h2>Frontend Development</h2>
+            <p>
+              As a front-end developer, you excel in crafting engaging and
+              intuitive interfaces that captivate users. Your toolkit includes
+              HTML, CSS, and JavaScript, which you wield skillfully to transform
+              design concepts into seamless web experiences
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-server"></i>
+            <h2>Backend Development</h2>
+            <p>
+              Backend development refers to the server-side of web development
+              where the logic, database interactions, and server configuration
+              occur. Here's an overview of backend development
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------------goals---------------------- -->
+
+    <div id="goals">
+      <div class="container">
+        <h1 class="sub-title">My Goals</h1>
+        <div class="work-list">
+          <div class="work">
+            <img
+              class="wrk-img"
+              src="images/goals.jpeg"
+              alt=""
+              width="640"
+              height="480"
+            />
+            <div class="layer">
+              <h3>Upskilling through Consistency</h3>
+              <p> One of my primary goals is to stay consistent in learning my
+                career field.</p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img
+              class="wrk-img"
+              src="images/gain.jpg"
+              alt=""
+              width="612"
+              height="408"
+            />
+            <div class="layer">
+              <h3>Being in the Game</h3>
+              <p>My goal is to gain valuable experience through internships and
+                work opportunitie</p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img
+              class="wrk-img"
+              src="images/mastery.jpg"
+              alt=""
+              width="540"
+              height="360"
+            />
+            <div class="layer">
+              <h3>Gaining Mastery</h3>
+              <p>My goal is to achieve mastery in my field, which will open up
+                opportunities for innovation and collaboration</p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#goalcontent" class="btn">see more</a>
+      </div>
+    </div>
+
+    <!-- ---------------------goalcontent----------------------------- -->
+
+    <div id="goalcontent">
+      <div class="goal-container">
+        <div class="row">
+          <div class="col1">
+            <img
+              class="wrk-img col-img"
+              src="images/goals.jpeg"
+              alt=""
+              width="640"
+              height="480"
+            />
+          </div>
+          <div class="col2">
+            <h1>Upskilling through Consistency</h1>
+            <p>
+              One of my primary goals is to stay consistent in learning my
+              career field. As we all know, practice makes perfect. I have
+              gathered a collection of courses and bought several resources that
+              will enable me to become proficient. Consistency in learning is
+              crucial for achieving success in any field. By dedicating regular
+              time to study and practice, I ensure that my knowledge and
+              abilities continue to grow. This persistent effort not only helps
+              me master complex concepts but also keeps me updated with the
+              latest trends and advancements in my field. Moreover, consistent
+              learning cultivates discipline and a strong work ethic. It teaches
+              me to manage my time effectively and prioritize my goals. Over
+              time, this dedication and regular practice will lead to
+              significant improvements and a deeper understanding of my chosen
+              career path. In summary, by staying consistent in my learning
+              journey and making use of the various courses and resources I've
+              gathered, I am setting myself up for long-term success and
+              proficiency in my career.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col1">
+            <img
+              class="wrk-img col-img"
+              src="images/gain.jpg"
+              alt=""
+              width="612"
+              height="408"
+            />
+          </div>
+          <div class="col2">
+            <h1>Being in the Game</h1>
+            <p>
+              My goal is to gain valuable experience through internships and
+              work opportunities. I am excited about the prospect of working on
+              real-life projects, which will allow me to apply my knowledge and
+              skills in practical settings. By consistently seeking out new
+              challenges and opportunities, I aim to continuously improve and
+              grow in my career. Consistency is key to achieving my goals. I
+              believe that regular practice and hands-on experience are
+              essential for mastering my field. I am committed to dedicating
+              time and effort to my professional development, ensuring that I
+              stay up-to-date with industry trends and best practices. In
+              addition to my coursework and self-study, I plan to leverage
+              internships and work experiences to deepen my understanding and
+              enhance my skills. Building real-life projects will not only
+              strengthen my portfolio but also provide me with the practical
+              experience needed to excel in my career. Through consistent effort
+              and a proactive approach, I am confident that I will achieve my
+              professional goals and make a meaningful impact in my field.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col1">
+            <img
+              class="wrk-img col-img"
+              src="images/mastery.jpg"
+              alt=""
+              width="540"
+              height="360"
+            />
+          </div>
+          <div class="col2">
+            <h1>Gaining Mastery</h1>
+            <p>
+              My goal is to achieve mastery in my field, which will open up
+              opportunities for innovation and collaboration with leading
+              companies. By developing a deep and comprehensive understanding of
+              my discipline, I aim to contribute meaningful advancements and
+              drive progress within the industry. Mastery is essential for
+              staying ahead in the competitive global workspace. It equips me
+              with the expertise to tackle complex challenges and develop
+              innovative solutions. With a high level of proficiency, I can
+              confidently work alongside top professionals and organizations,
+              contributing to groundbreaking projects and initiatives. Achieving
+              mastery will allow me to bring fresh ideas to the table, fostering
+              a culture of creativity and continuous improvement. By staying
+              up-to-date with the latest trends and advancements, I can
+              anticipate changes and adapt swiftly, ensuring that my skills
+              remain relevant and in demand. Working with companies at the
+              forefront of the industry, I will have the opportunity to apply my
+              knowledge in practical settings, driving innovation and delivering
+              exceptional results. My ultimate aim is to become a thought leader
+              and influencer in my field, known for my ability to devise
+              innovative solutions and contribute to the success of the
+              organizations I work with.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----------------contact----------------------- -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>edet.aniebiet@lmu.edu.ng
+            </p>
+            <p><i class="fa-solid fa-phone"></i>+2348145755961</p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/ahni_baba/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/aniebiet-edet-9036a924b"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://hng11.slack.com/team/U07AR7PNNU8"
+                ><i class="fa-brands fa-slack"></i
+              ></a>
+              <a href="https://x.com/Boss_ahnibaba"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+            </div>
+            <a href="" class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input type="email" placeholder="Your Email" required />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright Ⓒ Ahnibaba.</p>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
