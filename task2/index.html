@@ -46,13 +46,13 @@
     <!-- ------------------- about ------------------------ -->
     <div id="about">
       <div class="container">
-        <div class="row">
+        <div class="row about-row">
           <div class="about-col-1">
             <img
-              src="images/por2.jpg"
+              src="images/re.jpg"
               alt=""
-              width="1080"
-              height="1080"
+              width="540"
+              height="540"
               data-testid="slackProfilePicture"
             />
             <!-- the specified width and height is the original size of the image, this is done to maintain natural dimensions -->
@@ -79,13 +79,13 @@
             </div>
 
             <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">
+              <p class="tab-links active-link" onclick="opentab(event, 'skills')">
                 Skills
               </p>
-              <p class="tab-links" onclick="opentab('experience')">
+              <p class="tab-links" onclick="opentab(event, 'experience')">
                 Experience
               </p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
             </div>
             <div class="tab-contents active-tab" id="skills">
               <ul>
@@ -169,11 +169,11 @@
         <div class="work-list">
           <div class="work">
             <img
-              class="wrk-img"
-              src="images/goals.jpeg"
+              class="col-img"
+              src="images/goals-1.jpeg"
               alt=""
-              width="640"
-              height="480"
+              width="442"
+              height="331"
             />
             <div class="layer">
               <h3>Upskilling through Consistency</h3>
@@ -186,12 +186,12 @@
           </div>
           <div class="work">
             <img
-              class="wrk-img"
-              src="images/gain.jpg"
+              class="col-img"
+              src="images/gain-1.jpg"
               alt=""
-              width="612"
-              height="408"
-            />
+              width="422"
+              height="282"
+            /> 
             <div class="layer">
               <h3>Being in the Game</h3>
               <p>My goal is to gain valuable experience through internships and
@@ -203,12 +203,13 @@
           </div>
           <div class="work">
             <img
-              class="wrk-img"
-              src="images/mastery.jpg"
+              class="col-img"
+              src="images/mastery-1.jpg"
               alt=""
-              width="540"
-              height="360"
+              width="367"
+              height="245"
             />
+            
             <div class="layer">
               <h3>Gaining Mastery</h3>
               <p>My goal is to achieve mastery in my field, which will open up
@@ -230,11 +231,11 @@
         <div class="row">
           <div class="col1">
             <img
-              class="wrk-img col-img"
-              src="images/goals.jpeg"
+              class="col-img"
+              src="images/goals-1.jpeg"
               alt=""
-              width="640"
-              height="480"
+              width="442"
+              height="331"
             />
           </div>
           <div class="col2">
@@ -263,11 +264,11 @@
         <div class="row">
           <div class="col1">
             <img
-              class="wrk-img col-img"
-              src="images/gain.jpg"
+              class="col-img"
+              src="images/gain-1.jpg"
               alt=""
-              width="612"
-              height="408"
+              width="422"
+              height="282"
             />
           </div>
           <div class="col2">
@@ -293,14 +294,14 @@
             </p>
           </div>
         </div>
-        <div class="row">
+        <div class="row col-row">
           <div class="col1">
             <img
-              class="wrk-img col-img"
-              src="images/mastery.jpg"
+              class="col-img last"
+              src="images/mastery-1.jpg"
               alt=""
-              width="540"
-              height="360"
+              width="367"
+              height="245"
             />
           </div>
           <div class="col2">

@@ -100,6 +100,14 @@ nav ul li a:hover::after{
     margin: auto; /* Optional: Center the image */
     border-radius: 15px;
 }
+.col-img {
+   
+    max-width: 100%; /* Image will scale down to fit within the container */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Optional: Remove space below the image */
+    margin: auto; /* Optional: Center the image */
+    border-radius: 15px;
+}
 
 #about {
     padding: 80px 0;
@@ -111,12 +119,12 @@ nav ul li a:hover::after{
     flex-wrap: wrap;
 }
 
-.about-col-1 {
-    flex-basis: 35%;  
-}
+
 .about-col-2 {
-    flex-basis: 60%;  
+    
+    flex-basis: 40%;  
 }
+
 .sub-title {
     color: #6f7471;
 }
@@ -246,6 +254,7 @@ nav ul li a:hover::after{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    height: 75%;
 }
 .layer{
     width: 100%;
@@ -392,12 +401,10 @@ nav .fa-solid {
     padding: 12px;
     margin-bottom: 5rem
 }
-.col1{
-    flex-basis: 35%;
-}
+
 
 .col2{
-    flex-basis: 60%;
+    flex-basis: 55%;
     line-height: 1.5;
     
 }
@@ -418,7 +425,7 @@ nav .fa-solid {
 
 /* -------------------------css for small screen----------------- */
 
-@media only screen and (max-width: 1045px){
+@media only screen and (max-width: 1245px){
     #header{
         background-position: center;
         color: #fff;
@@ -471,16 +478,23 @@ nav .fa-solid {
         cursor: pointer;
 
     }
+    .about-row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     .sub-title {
         font-size: 30px;
     }
-    .about-col-1, .about-col-2 {
+
+    .about-col-2 {
         flex-basis: 100%;
     }
     .about-col-1{
        margin-bottom: 30px; 
     }
+    
     .about-col-2{
        font-size: 14px;
     }
@@ -491,9 +505,20 @@ nav .fa-solid {
     .contact-left, .contact-right {
         flex-basis: 100%;
     }
-    .col1, .col2{
+    
+    .col2{
         flex-basis: 100%;
+        padding: 30px;
     }
+    .col1{
+        flex-basis: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    
 
     
 }
